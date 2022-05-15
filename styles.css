@@ -12,7 +12,7 @@ html {
     --text-color-dark:#171717;
     --text-color:#1c1917;
 
-    --offset: 40px;
+    --offset: 70px;
 }
 
 .background {
@@ -22,7 +22,6 @@ html {
 
 .container-form {
     max-width: 1024px;
-    max-height: 1024px;
     background-color: white;
     border: 0.5px solid var(--border-color);
     border-radius: 15px;
@@ -33,40 +32,33 @@ html {
 .block-registration {
     display: flex;
     flex-direction: row;
+    
+    
 }
     
 .block-img {
-
-    width: calc(140%  - var(--offset));
-    margin: 0, auto;
+    width: calc(130%  - var(--offset));
+    margin: 0 auto;
     background-image: url(images/mountains-1.jpg);
     border-radius: 15px 0px 0px 15px;
-    height: 1024px;
     background-size: cover;
-}
-
-.title-form {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0 calc(0px - var(--offset) / 2);
-    padding-top: 40px;
-    padding-left: 40px;
 }
 
 .block-form {
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
+   width: calc(100% - var(---offset / 2));
+   margin: calc(var(--offset) / 2);
 }
-
 
 .title {
     color: var(--blue-dark);
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 700;
     text-align: left;
-    margin-right: -5px;
+    margin-top: 20px;
+
 }
 
 .title-secondary {
@@ -74,74 +66,59 @@ html {
     font-size: 18px;
     font-weight: 700;
     text-align: left;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    padding-left: 20px;
+    margin-top: 20px;
 }
 
 .border {
     border-top: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
     
-    width: calc(100% - var(---offset));
+    width: calc(100% - var(---offset / 2));
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
 
-    margin: calc(var(--offset) / 2);
-    margin-left: -130px;
+    
 }
 
 .personal-data {
     display: flex;
     flex-direction: row;
-	flex-wrap: nowrap;
+	flex-wrap:wrap;
     justify-content: space-between;
-    margin-left: -130px;
+    
 }
 
 .information {
     width: calc(100% / 2 - var(--offset));
-    margin: calc(var(--offset)/2);
-    padding-top: 70px; 
+    margin: calc(var(--offset) / 2);
+    padding-top: 10px; 
 }
 
-.information-2 {
-    width: calc(100% / 2 - var(--offset));
-    margin: calc(var(--offset)/2);
-    padding-top:5px;
-}
 
 .input{
     border: 1px solid var(--border-color);
     border-radius: 10px;
     padding: 15px;
-    width: calc(100% - var(--offset));
+    width: 100%;
     margin-top: 10px;
 }
 
-.input-2{
-    border: 1px solid var(--border-color);
-    border-radius: 10px;
-    padding: 15px;
-    width: calc(110% - var(--offset));
-    margin-top: 10px;
-}
+
 
 .input:hover{
-    border: 2px solid var(--blue-light);
+   outline: 1px solid var(--blue-light);
 }
 
-.input-2:hover{
-    border: 2px solid var(--blue-light);
-}
+
 
 .label {
     
-    font-size: 14px;
+    font-size: 13px;
     color: var(--text-color-dark);
     font-weight: 600;
+
     
 }
 
@@ -151,21 +128,13 @@ html {
     color: var(--text-color-dark);
     font-weight: 600;
     text-align: left;
-}
-
-.personal-country {
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-
+    padding-left: 10px;
 }
 
 .information-country {
     
     padding-bottom: 10px;
-    margin: calc(var(--offset)/2);
+    margin: calc(var(--offset) / 2);
     width:calc(100% / 3 - var(--offset)); 
 }
 
@@ -173,24 +142,26 @@ html {
 
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
+    width:100%;
 }
 
 .information-adress {
     
     padding-bottom: 10px;
-    margin: calc(var(--offset)/2);
-    width:calc(100% / 1 - var(--offset));
+    width:100%;
+    margin: calc(var(--offset) / 2);
 }
 
-.footer{
+.footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: left;
     flex-wrap: wrap;
     margin: calc(var(--offset) / 2);
-    margin-left: -130px;
+    width:100%;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .text {
@@ -199,25 +170,18 @@ html {
     text-align: left;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 20px;
     line-height: 1.5;
     
-}
-
-.footer {
-    display: flex;
-    flex-direction: row;
-    
-    border-bottom: 1px solid var(--border-color);
-
 }
 
 .block-checkbox {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-   width:100%;
-   margin: calc(var(--offset)/2);
+    width:100%;
+    margin: calc(var(--offset)/2);
+    align-items: flex-start;
+    
 }
 
 .checkbox{
@@ -225,6 +189,7 @@ html {
     width:15px;
     height: 15px;
     border: 1px solid var(--border-color);
+    
 }
 
 .checkbox:checked{
@@ -232,6 +197,7 @@ html {
     background-image: url(images/check.png);
     background-position: center;
     background-size: contain;
+    
 }
 
 button{
@@ -239,11 +205,19 @@ button{
     background-color: var(--blue-dark);
     border-radius: 10px;
     padding: 15px;
-    width: calc(125% - var(--offset));
+    width: 100%;
     margin-top: 10px;
-    margin-left: -110px;
+    
     color: var(--backgroud-color);
     font-size: 16px;
     font-weight: 600;
+
+    cursor: pointer;
     
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
 }

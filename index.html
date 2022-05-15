@@ -21,15 +21,16 @@
                     
                     <div class="block-img"> </div>
 
-                    <div class="title-form">
-                        <h1 class="title">Регистрация</h1>
-                    </div>
+                    
 
                     <div class="block-form">
+
+                        <h1 class="title">Регистрация</h1>
 
                         <form action="https://www.bit-by-bit.ru/form-submit">
 
                             <div class="personal-data">
+
                                 <div class="information">
                                     <label class="label" for="name">Имя</label>
                                     <input class="input" id="name" type="text" name="FirstName"/>
@@ -39,28 +40,30 @@
                                     <label class="label" for="surname">Фамилия</label>
                                     <input class="input" id="surname" type="text" name="LastName"/>
                                 </div>
-                            </div>
-
-                            <div class="personal-data">
-                                <div class="information-2">
+                            
+                                <div class="information">
                                     <label class="label" for="mail">Email</label>
                                     <input class="input" id="mail"type="text" name="Email"/>
                                 </div>
     
-                                <div class="information-2">
+                                <div class="information">
                                     <label class="label" for="phone" >Телефон</label>
                                     <input class="input" id="phone" type="text" name="Phone"/>
                                 </div>
+
                             </div>
 
                             <div class="border">
+
                                 <h2 class="title-secondary">Адрес доставки</h2>
 
-                                <div class="personal-country">
+
+                                <div class="personal-data">
 
                                     <div class="information-country">
+
                                         <label class="label" for="country">Страна</label>
-                                        <select class="input-2" id="country" type="text" name="Country">
+                                        <select class="input" id="country" type="text" name="Country">
                                             <option value="country-1">Россия</option>
                                             <option value="country-2">Казахстан</option>
                                             <option value="country-3">Беларусь</option>
@@ -70,13 +73,17 @@
                                     </div>
         
                                     <div class="information-country">
+
                                         <label class="label" for="city">Город </label>
-                                        <input class="input-2" id="city" type="text" name="City"/>
+                                        <input class="input" id="city" type="text" name="City"/>
+
                                     </div>
 
                                     <div class="information-country">
+
                                         <label class="label" for="postal-code"> Почтовый индекс </label>
-                                        <input class="input-2" id="postal-code" type="text" name="РostalСode"/>
+                                        <input class="input" id="postal-code" type="text" name="РostalСode"/>
+
                                     </div>
 
                                 </div>
@@ -85,7 +92,7 @@
 
                                     <div class="information-adress">
                                         <label class="label" for="adress">Адрес доставки (улица, дом, квартира) </label>
-                                        <input class="input-2" id="adress" type="text" name="Adress"/>
+                                        <input class="input" id="adress" type="text" name="Adress"/>
                                     </div>
 
 
@@ -100,15 +107,23 @@
                             
                                 <div class="block-checkbox">
                                     
-                                        <label for="email-option" class="label-checkbox"> По Email </label>
-                                        <input type="checkbox" id="email-option" name="notifications" value="email" class="checkbox"/>
-                                   
-                                        <label for="sms-option" class="label-checkbox"> По SMS </label>
+                                    <div class="row"> 
+                                         <input type="checkbox" id="email-option" name="notifications" value="email" class="checkbox"/>
+                                         <label for="email-option" class="label-checkbox"> По Email </label>
+                                       
+                                   </div>
+
+                                   <div class="row"> 
                                         <input type="checkbox" id="sms-option" name="notifications"value="sms" class="checkbox"/>
+                                        <label for="sms-option" class="label-checkbox"> По SMS </label>
+                                        
+                                    </div>
 
-                                        <label for="push-option" class="label-checkbox"> Push-уведомления в приложении </label>
+                                    <div class="row"> 
                                         <input type="checkbox" id="push-option" name="notifications" value="push" class="checkbox"/>
-
+                                        <label for="push-option" class="label-checkbox"> Push-уведомления в приложении </label>
+                                        
+                                    </div>
 
                                 </div>
                             
